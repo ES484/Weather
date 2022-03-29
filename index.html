@@ -1,0 +1,166 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- navbar of links -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="https://routeegypt.com/weather/images/logo.png" alt="" class='d-inline-block'>
+          <div class='ps-3'>
+            <h1 class='text-capitalize'>weather</h1>
+            <span class="fs-6">tagline goes here</span>
+          </div>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active border border-2" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header contain three boxs to show weather of the day and 2 days after it -->
+<header class="my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="search py-5 position-relative">
+          <input type="text" name="search" id="searchInp" placeholder="Find your location" class='rounded-pill form-control mt-4 py-3 text-light'>
+          <button class='text-capitalize rounded-pill py-2 px-4 text-light position-absolute end-0 me-2 mt-3' id='find'>find</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 gx-0">
+        <div class="position-relative" id='today-weather'>
+          <div class="d-flex justify-content-between day p-2">
+           <div>
+            <h5 id='today-day'></h5>
+           </div>
+           <div class='d-flex'>
+            <h5 id='today-date-number'></h5>
+            <h5 id='today-date' class="px-1"></h5>
+           </div>
+          </div>
+          <div class="day-degree ps-2 py-4  text-light">
+            <h5 class='text-capitalize' id='city'>cairo</h5>
+            <div id='degree'  class="d-inline-block px-3">
+              <span>13</span>
+              <sup>o</sup>
+              <span>C</span>
+            </div>
+            <div id='iconRefersTo' class="d-inline-block py-2">
+              <img src="http://cdn.weatherapi.com/weather/64x64/night/116.png" alt="">
+            </div>
+            <h6 id='status'>
+              clear
+            </h6>
+          </div>
+          <div class="footerofTodayWeather w-100 d-flex p-2 position-absolute bottom-0">
+            <div class="px-3">
+              <i class="fas fa-umbrella"></i>
+              <span>20 &#x25;</span>
+            </div>
+            <div class="px-3">
+              <i class="fas fa-wind"></i>
+              <span>18km/h</span>
+            </div>
+            <div class="px-3">
+              <i class="far fa-compass"></i>
+              <span class='text-capitalize'>east</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 gx-0">
+        <div id='tomorrow-weather'>
+          <h5 class="text-center p-2" id='tomorrow-dayname'></h5>
+            <div id='tomorrow-weather-details' class="text-center">
+              <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+              <h4>14.5<sup>o</sup>C</h4>
+              <h5>10.2<sup>o</sup>C</h5>
+              <h6>Partly cloudy</h6>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-lg-4 gx-0">
+        <div id='aftertomorrow-weather'>
+          <h5 class="text-center p-2" id='aftertomorrow-dayname'></h5>
+          <div id='aftertomorrow-weather-details' class="text-center py-3">
+            <img src="https://cdn.weatherapi.com/weather/64x64/day/176.png" alt="">
+            <h4>16.9<sup>o</sup>C</h4>
+            <h5>10.9<sup>o</sup>C</h5>
+            <h6>Patchy rain possible</h6>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- footer contain subscribe to mail and social media links to follow us and connet -->
+<footer class='py-5'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="subscribe">
+          <div class="py-5 position-relative">
+            <input type="text" name="subscribe" placeholder="Enter your email to subscribe..." class='rounded-pill form-control py-3 text-light'>
+            <button class='text-capitalize rounded-pill py-2 px-3 text-light position-absolute end-0 me-2'>subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 offset-md-1">
+        <div class="social d-flex py-5 justify-content-md-around">
+          <a href="">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+         <a href="">
+          <i class="fa-brands fa-pinterest"></i>
+         </a>
+        </div>
+      </div>
+      <div>
+        <p class='text-light'>
+          Copyright 2014 Company name. Designed by Themezy. All rights reserved
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+    
+    
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+body
+{
+    font-family: sans-serif;
+    background-color: #262936
+}
+:root
+{
+    --main-color: #009AD8;
+} 
+header
+{
+    background-image: url(../images/banner.png);
+    background-size: cover;
+    background-position: center;
+}
+nav, 
+header div #searchInp,
+footer .subscribe input,
+footer .social i
+{
+    background-color: #1E202B ;
+}
+header div button,
+footer .subscribe button,
+footer .social i:hover
+{
+    background-color: var(--main-color);
+}
+header #status,
+header #tomorrow-weather-details h6,
+header #aftertomorrow-weather-details h6,
+footer .social i
+{
+    color: var(--main-color)
+}
+header div #searchInp,
+header div button,
+footer .subscribe input,
+footer .subscribe button
+{
+    border-color: transparent;
+}
+header #tomorrow-weather,
+header #aftertomorrow-weather
+{
+    height: 100%;
+    width: 100%;
+}
+nav h1
+{
+    font-size: .95rem
+}
+nav span
+{
+    color: #BFC1C8;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #fff;
+    font-size: 0.8rem;
+    padding: 5px 20px;
+}
+.navbar-dark .navbar-nav .nav-item .active
+{
+    border-radius: 50rem!important;
+    border-color: var(--main-color) !important;
+}
+header div button,
+footer .subscribe button
+{
+    top: 35%;
+}
+header #today-weather,
+header #aftertomorrow-weather
+{
+    background-color:#323544;
+}
+.weather
+{
+    background-color:#323544;
+    border-radius: 3%;
+}
+/* header #today-weather
+{
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%
+}
+header #aftertomorrow-weather
+{
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+} */
+header div .day,
+header div #tomorrow-dayname,
+header div #aftertomorrow-dayname
+{
+    background-color:#0000001A;
+}
+header div .col-md-4
+{
+    color: #bfc1c8;
+}
+header #degree
+{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+header #tomorrow-weather-details img,
+header #aftertomorrow-weather-details img
+{
+    width: 15%;
+}
+header #tomorrow-weather
+{
+    background-color: #262936;
+}
+footer .social i
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+footer .social i:hover
+{
+    cursor: pointer
+}
+
+
